@@ -1,0 +1,18 @@
+public class Main {	
+	public static void main(String[] args) {      
+	     /*
+	        Adorno adorno1 = new Adorno();
+	        System.out.println("El tipo es: " + adorno1.tipo);
+	        System.out.println("El material es: " + adorno1.material);	      
+	        Adorno adorno2 = new Adorno();
+	        System.out.println("El tipo es: " + adorno2.tipo);
+	        System.out.println("El meterial es: " + adorno2.material);        */
+	       Adorno adorno3 = new Adorno("Jarrón", "Vidrio");
+	       System.out.println("El Tipo de adorno es: " + adorno3.getTipo());
+	       System.out.println("El Material de adorno es: " + adorno3.getMaterial());
+	       adorno3.setTipo("Vaso");
+	       adorno3.setMaterial("Plastico");
+	       System.out.println("El Tipo de adorno es: " + adorno3.getTipo());
+	       System.out.println("El Material de adorno es: " + adorno3.getMaterial());      
+	}
+}
