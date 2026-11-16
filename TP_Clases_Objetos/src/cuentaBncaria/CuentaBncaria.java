@@ -1,0 +1,22 @@
+package cuentaBncaria;
+
+import java.util.Scanner;
+
+public class CuentaBncaria{
+	private Double saldo;
+   public CuentaBncaria(){
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Ingrese su saldo: ");
+       saldo = sc.nextDouble();            
+       //sc.close();   
+   }
+   public CuentaBncaria(Double saldo){
+       this.saldo = saldo;
+   } 
+   public Double getSaldo() {
+   	return saldo;
+   }
+   public void setSaldo(Double saldo) {
+   	this.saldo = saldo;
+   }
+}
