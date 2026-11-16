@@ -7,12 +7,19 @@ public class Main {
 	        Adorno adorno2 = new Adorno();
 	        System.out.println("El tipo es: " + adorno2.tipo);
 	        System.out.println("El meterial es: " + adorno2.material);        */
-	       Adorno adorno3 = new Adorno("Jarrón", "Vidrio");
-	       System.out.println("El Tipo de adorno es: " + adorno3.getTipo());
-	       System.out.println("El Material de adorno es: " + adorno3.getMaterial());
-	       adorno3.setTipo("Vaso");
-	       adorno3.setMaterial("Plastico");
-	       System.out.println("El Tipo de adorno es: " + adorno3.getTipo());
-	       System.out.println("El Material de adorno es: " + adorno3.getMaterial());      
-	}
+	       Persona persona1 = new Persona();
+	       System.out.println("El nombre es: " + persona1.getNombre());
+	       System.out.println("El apellido es: " + persona1.getApellido());
+		   Libro libro1 = new Libro();
+	       System.out.println("El titulo del libro es: " + persona1.getTitulo());
+	       System.out.println("El autor es: " + persona1.getAutor());
+		   Auto auto1 = new Auto();
+	       System.out.println("La marca del auto es: " + persona1.getMarca());
+	       System.out.println("El modelo es: " + persona1.getModelo());
+	       System.out.println("El color es: " + persona1.getColor());
+		   CuentaBncaria cuentabncaria1 = new CuentaBncaria();
+	       System.out.println("Tu saldo es: " + persona1.getSaldo());
+		   Rectangulo rectangulo1 = new Rectangulo();
+	       System.out.println("La base es: " + persona1.getBase());
+	       System.out.println("La altura es: " + persona1.getAltura());
 }

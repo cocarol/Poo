@@ -3,26 +3,26 @@ public class Libro{
 	public String autor; 
    public Libro(){
        Scanner sc = new Scanner(System.in);
-       System.out.println("Ingrese tipo: ");
-       tipo = sc.nextLine();         
-       System.out.println("Ingrese el material: ");
-       material =  sc.nextLine();     
-       //sc.close();   
+       System.out.println("Ingrese el título: ");
+       titulo = sc.nextLine();         
+       System.out.println("Ingrese el autor: ");
+       autor =  sc.nextLine();     
+       //sc.close(); 
    }
-   public Adorno(String tipo, String material){
-       this.tipo = tipo;
-       this.material = material;
+   public Libro(String titulo, String autor){
+       this.titulo = titulo;
+       this.autor = autor;
    } 
-   public String getTipo() {
-   	return tipo;
+   public String getTitulo() {
+   	return titulo;
    }
-   public void setTipo(String tipo) {
-   	this.tipo = tipo;
+   public void setTitulo(String titulo) {
+   	this.titulo = titulo;
    }  
-   public String getMaterial() {
-   	return material;
+   public String getAutor() {
+   	return autor;
    }
-   public void setMaterial(String material) {
-   	this.material = material;
+   public void setAutor(String autor) {
+   	this.autor = autor;
    }
 }

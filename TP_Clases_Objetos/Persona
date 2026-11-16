@@ -3,26 +3,26 @@ public class Persona{
 	public Int edad; 
    public Persona(){
        Scanner sc = new Scanner(System.in);
-       System.out.println("Ingrese tipo: ");
-       tipo = sc.nextLine();         
-       System.out.println("Ingrese el material: ");
-       material =  sc.nextLine();     
+       System.out.println("Ingrese su nombre: ");
+       nombre = sc.nextLine();         
+       System.out.println("Ingrese su apellido: ");
+       apellido =  sc.nextLine();     
        //sc.close();   
    }
-   public Adorno(String tipo, String material){
-       this.tipo = tipo;
-       this.material = material;
+   public Persona(String nombre, String apellido){
+       this.nombre = nombre;
+       this.apellido = apellido;
    } 
-   public String getTipo() {
-   	return tipo;
+   public String getNombre() {
+   	return nombre;
    }
-   public void setTipo(String tipo) {
-   	this.tipo = tipo;
+   public void setNombre(String nombre) {
+   	this.nombre = nombre;
    }  
-   public String getMaterial() {
-   	return material;
+   public String getApellido() {
+   	return apellido;
    }
-   public void setMaterial(String material) {
-   	this.material = material;
+   public void setApellido(String apellido) {
+   	this.apellido = apellido;
    }
 }
