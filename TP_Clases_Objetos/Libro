@@ -1,17 +1,21 @@
 public class Libro{
 	public String titulo;
-	public String autor; 
+	public String autor;
+    public int año;
    public Libro(){
        Scanner sc = new Scanner(System.in);
        System.out.println("Ingrese el título: ");
        titulo = sc.nextLine();         
        System.out.println("Ingrese el autor: ");
-       autor =  sc.nextLine();     
+       autor =  sc.nextLine();
+       System.out.println("Ingrese el año");
+       año = sc.nextInt();
        //sc.close(); 
    }
-   public Libro(String titulo, String autor){
+   public Libro(String titulo, String autor, int año){
        this.titulo = titulo;
        this.autor = autor;
+       this.año = año;
    } 
    public String getTitulo() {
    	return titulo;
@@ -24,5 +28,11 @@ public class Libro{
    }
    public void setAutor(String autor) {
    	this.autor = autor;
+   }
+   public void getAño(int año) {
+    return año;
+   }
+   public void setAño(int año) {
+    this.año = año;
    }
 }

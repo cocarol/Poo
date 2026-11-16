@@ -16,7 +16,10 @@ public class Auto{
        this.marca = marca;
        this.modelo = modelo;
        this.color = color;
-   } 
+   }
+   public void mostrarDatos(){
+    System.out.println("“Tengo un" + marca + "modelo" + modelo + "de color" + color)
+   }
    public String getMarca() {
    	return marca;
    }

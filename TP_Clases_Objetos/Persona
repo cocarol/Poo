@@ -1,17 +1,17 @@
 public class Persona{
 	public String nombre;
-	public Int edad; 
+	public int edad; 
    public Persona(){
        Scanner sc = new Scanner(System.in);
        System.out.println("Ingrese su nombre: ");
        nombre = sc.nextLine();         
-       System.out.println("Ingrese su apellido: ");
-       apellido =  sc.nextLine();     
+       System.out.println("Ingrese su edad: ");
+       edad =  sc.nextInt();     
        //sc.close();   
    }
-   public Persona(String nombre, String apellido){
+   public Persona(String nombre, Integer edad){
        this.nombre = nombre;
-       this.apellido = apellido;
+       this.edad = edad;
    } 
    public String getNombre() {
    	return nombre;
@@ -19,10 +19,10 @@ public class Persona{
    public void setNombre(String nombre) {
    	this.nombre = nombre;
    }  
-   public String getApellido() {
-   	return apellido;
+   public int getEdad() {
+   	return edad;
    }
-   public void setApellido(String apellido) {
-   	this.apellido = apellido;
+   public void setEdad(int edad) {
+   	this.edad = edad;
    }
 }
