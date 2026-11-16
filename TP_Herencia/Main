@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+        Empleado empleado1 = new Empleado("Juan Pérez", 30, 500000);
+        empleado1.mostrarDatos();
+        Auto auto1 = new Auto("Citroen", "Basalt", 5);
+        auto1.mostrarInformacion();
+        Perro perro1 = new Perro("Sansón", 8, "chihuahua");
+        System.out.println("Perro: " + perro1.getNombre() + ", edad: " + perro1.getEdad() + ", raza: " + perro1.getRaza());
+        perro1.ladrar();
+    }
+}
