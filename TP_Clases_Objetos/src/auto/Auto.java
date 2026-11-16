@@ -1,0 +1,42 @@
+package auto;
+
+import java.util.Scanner;
+
+public class Auto{
+	public String marca;
+	public String modelo;
+    public String color;
+   public Auto(){
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Ingrese la marca: ");
+       marca = sc.nextLine();         
+       System.out.println("Ingrese el modelo: ");
+       modelo =  sc.nextLine();   
+       System.out.println("Ingrese el color: ");  
+       color = sc.nextLine();
+       //sc.close();   
+   }
+   public Auto(String marca, String modelo, String color){
+       this.marca = marca;
+       this.modelo = modelo;
+       this.color = color;
+   } 
+   public String getMarca() {
+   	return marca;
+   }
+   public void setMarca(String marca) {
+   	this.marca = marca;
+   }  
+   public String getModelo() {
+   	return modelo;
+   }
+   public void setModelo(String modelo) {
+   	this.modelo = modelo;
+   }
+   public String getColor() {
+   	return color;
+   }
+   public void setColor(String color) {
+   	this.color = color;
+   }
+}
