@@ -1,0 +1,19 @@
+public class Empleado extends Persona {
+    private String materia;
+
+    public Empleado(String nombre, int edad, String materia) {
+        super(nombre, edad);
+        this.materia = materia;
+    }
+
+    public String getMateria() {
+        return materia;
+    }
+
+    public void setMateria(String materia) {
+        this.materia = materia;
+    }
+    public void mostrarDatos() {
+        System.out.println("Nombre: " + getNombre() + ", edad: " + getEdad() + ", materia: " + getMateria());
+    }
+}

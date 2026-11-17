@@ -1,0 +1,9 @@
+public class Main {
+    public static void main(String[] args) {
+        Docente docente1 = new Docente("Juan Pérez", 30, 500000);
+        docente1.mostrarDatos();
+        Preceptor preceptor1 = new Preceptor("María García", 35, 600000);
+        preceptor1.mostrarDatos();
+        preceptor1.setEdad(36);
+    }
+}

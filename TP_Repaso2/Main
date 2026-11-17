@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        Jugador jugador1 = new Jugador();
+        jugador1.mostrarDatos();
+        jugador1.puntosGanados(10);
+        jugador1.puntosGanados(-5);
+        Jugador jugador2 = new Jugador();
+        jugador2.mostrarDatos();
+        jugador2.puntosGanados(5);
+        jugador2.puntosGanados(-10);
+        jugador2.setNivel(1);
+        jugador2.setPuntos(0);
+        jugador1.mostrarDatos();
+        jugador2.mostrarDatos();
+    }
+}

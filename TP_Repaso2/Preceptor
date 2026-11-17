@@ -1,0 +1,19 @@
+public class Empleado extends Persona {
+    private int cursoAsignado;
+
+    public Empleado(String nombre, int edad, int cursoAsignado) {
+        super(nombre, edad);
+        this.cursoAsignado = cursoAsignado;
+    }
+
+    public int getCursoAsignado() {
+        return cursoAsignado;
+    }
+
+    public void setCursoAsignado(int cursoAsignado) {
+        this.cursoAsignado = cursoAsignado;
+    }
+    public void mostrarDatos() {
+        System.out.println("Nombre: " + getNombre() + ", edad: " + getEdad() + ", curso asignado: " + getCursoAsignado());
+    }
+}
