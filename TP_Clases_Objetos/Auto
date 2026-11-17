@@ -1,14 +1,18 @@
+package auto;
+
+import java.util.Scanner;
+
 public class Auto{
 	public String marca;
 	public String modelo;
-    public string color;
+    public String color;
    public Auto(){
        Scanner sc = new Scanner(System.in);
        System.out.println("Ingrese la marca: ");
        marca = sc.nextLine();         
        System.out.println("Ingrese el modelo: ");
        modelo =  sc.nextLine();   
-       System.out.println("Ingrese el color: ")  
+       System.out.println("Ingrese el color: ");
        color = sc.nextLine();
        //sc.close();   
    }
@@ -18,7 +22,7 @@ public class Auto{
        this.color = color;
    }
    public void mostrarDatos(){
-    System.out.println("“Tengo un" + marca + "modelo" + modelo + "de color" + color)
+    System.out.println("“Tengo un" + marca + "modelo" + modelo + "de color" + color);
    }
    public String getMarca() {
    	return marca;

@@ -1,3 +1,11 @@
+package main;
+
+import auto.Auto;
+import cuentaBncaria.CuentaBncaria;
+import libro.Libro;
+import persona.Persona;
+import rectangulo.Rectangulo;
+
 public class Main {	
 	public static void main(String[] args) {      
 	     /*
@@ -9,12 +17,12 @@ public class Main {
 	        System.out.println("El meterial es: " + adorno2.material);        */
 	       Persona persona1 = new Persona();
 		   Persona persona2 = new Persona();
-	       System.out.println("El nombre es: " + persona1.getNombre + " la edad es: " + persona1.getEdad());
-		   System.out.println("El nombre es: " + persona2.getNombre + " la edad es: " + persona2.getEdad());
+	       System.out.println("El nombre es: " + persona1.getNombre() + " la edad es: " + persona1.getEdad());
+		   System.out.println("El nombre es: " + persona2.getNombre() + " la edad es: " + persona2.getEdad());
 		   Libro libro1 = new Libro();
 		   Libro libro2 = new Libro();
-	       System.out.println("El titulo del libro es: " + libro1.getTitulo + " el autor es: " + libro1.getAutor + " el año es: " + libro1.getAño());
-		   System.out.println("El titulo del libro es: " + libro2.getTitulo + " el autor es: " + libro2.getAutor + " el año es: " + libro2.getAño());
+	       System.out.println("El titulo del libro es: " + libro1.getTitulo() + " el autor es: " + libro1.getAutor() + " el año es: " + libro1.getAño());
+		   System.out.println("El titulo del libro es: " + libro2.getTitulo() + " el autor es: " + libro2.getAutor() + " el año es: " + libro2.getAño());
 		   Auto auto1 = new Auto();
            Auto auto2 = new Auto();
            Auto auto3 = new Auto();
@@ -22,8 +30,9 @@ public class Main {
            auto2.mostrarDatos();
            auto3.mostrarDatos();
 		   CuentaBncaria cuentabncaria1 = new CuentaBncaria();
-	       System.out.println("Tu saldo es: " + persona1.getSaldo());
+	       System.out.println("Tu saldo es: " + cuentabncaria1.getSaldo());
 		   Rectangulo rectangulo1 = new Rectangulo();
-	       System.out.println("La base es: " + persona1.getBase());
-	       System.out.println("La altura es: " + persona1.getAltura());
+	       System.out.println("La base es: " + rectangulo1.getBase());
+	       System.out.println("La altura es: " + rectangulo1.getAltura());
+	}
 }
