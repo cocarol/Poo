@@ -1,16 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        Jugador jugador1 = new Jugador();
-        jugador1.mostrarDatos();
-        jugador1.puntosGanados(10);
-        jugador1.puntosGanados(-5);
-        Jugador jugador2 = new Jugador();
-        jugador2.mostrarDatos();
-        jugador2.puntosGanados(5);
-        jugador2.puntosGanados(-10);
-        jugador2.setNivel(1);
-        jugador2.setPuntos(0);
-        jugador1.mostrarDatos();
-        jugador2.mostrarDatos();
+        Jugador j1 = new Jugador("Pepito");
+        j1.mostrarDatos();
+        j1.ganarPuntos(10);
+        j1.ganarPuntos(-5);
+        j1.subirNivel();
+        Jugador j2 = new Jugador("Carlos");
+        j2.mostrarDatos();
+        j2.ganarPuntos(20);
+        j2.ganarPuntos(-5);
+        j2.subirNivel();
+        j1.mostrarDatos();
+        j2.mostrarDatos();
+
     }
 }

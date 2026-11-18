@@ -3,10 +3,10 @@ public class Jugador {
     private int nivel;
     private int puntos;
 
-    public Jugador(String nombre, int nivel, int puntos) {
+    public Jugador(String nombre) {
         this.nombre = nombre;
-        this.edad = edad;
-        this.puntos = puntos;
+        this.nivel = 1;
+        this.puntos = 0;
     }
 
     public String getNombre() {
@@ -21,24 +21,29 @@ public class Jugador {
         return nivel;
     }
 
-    public void setNivel(int nivel) {
-        this.nivel = 1;
-    }
-
     public int getPuntos() {
         return puntos;
     }
 
-    public void setPuntos(int puntos) {
-        this.puntos = 0;
+    public void subirNivel() {
+        this.nivel = nivel + 1;
+        System.out.println(nombre + " subió de nivel a " + nivel);
     }
 
-    public void ganarPuntos(int puntosGanados) {
-        if (puntosGanados > 0) {
-            this.puntos += puntosGanados;
-            System.out.println(nombre + " ha ganado " + puntosGanados + " puntos. Total de puntos: " + puntos);
+    public void ganarPuntos(int pts) {
+        if (pts > 0) {
+            this.puntos += pts;
+            System.out.println(nombre + " ganó " + pts + " puntos. Total de puntos: " + puntos);
         } else {
             System.out.println("Los puntos ganados deben ser positivos.");
         }
+    }
+
+    public void mostrarDatos() {
+        System.out.println("-------------------------");
+        System.out.println("Jugador: " + this.nombre);
+        System.out.println("nivel: " + this.nivel);
+        System.out.println("nuntos: " + this.puntos);
+        System.out.println("-------------------------");
     }
 }
